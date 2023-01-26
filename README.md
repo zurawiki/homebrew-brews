@@ -1,17 +1,15 @@
-# `gptcommit`
+# `zurawiki/brews`
 
-This is the `brew` formula for [`gptcommit`](https://github.com/zurawiki/gptcommit).
+This is the `brew` formulae for [`gptcommit`](https://github.com/zurawiki/gptcommit) and other tools
 
-Check out the blog post [here](https://zura.wiki/post/never-write-a-commit-message-again-with-the-help-of-gpt-3/).
 
 ## How do I install these formulae?
 
-`brew install zurawiki/gptcommit/<formula>`
+`brew install zurawiki/brews/<formula>`
 
-e.g. `brew install zurawiki/gptcommit/gptcommit`
+e.g. `brew install zurawiki/brews/gptcommit`
 
-
-Or `brew tap zurawiki/gptcommit` and then `brew install gptcommit`.
+Or `brew tap zurawiki/brews` and then `brew install gptcommit`.
 
 ## Documentation
 
