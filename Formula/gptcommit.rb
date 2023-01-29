@@ -1,8 +1,9 @@
 class Gptcommit < Formula
+  version = "0.1.13"
   desc "Git prepare-commit-msg hook for authoring commit messages with GPT-3"
   homepage "https://github.com/zurawiki/gptcommit"
-  url "https://github.com/zurawiki/gptcommit/archive/v0.1.11.tar.gz"
-  sha256 "9b0a0f45fbc2a95d40528bc66e32708d7f2a9fc0183c91902f55c77e36e902fb"
+  url "https://github.com/zurawiki/gptcommit/archive/v" + version.to_s + ".tar.gz"
+  sha256 "e83317e2f52b56548f5b5f10274b3dc9434a3952bb2d0eb0bee56a745d939236"
   license "MIT"
   head "https://github.com/zurawiki/gptcommit.git", branch: "main"
 
@@ -15,6 +16,6 @@ class Gptcommit < Formula
   end
 
   test do
-    assert_match "0.1.11", shell_output("#{bin}/gptcommit -V")
+    assert_match version.to_s, shell_output("#{bin}/gptcommit -V")
   end
 end
