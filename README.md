@@ -8,6 +8,7 @@ This is the `brew` formulae for [`gptcommit`](https://github.com/zurawiki/gptcom
 `brew install zurawiki/brews/<formula>`
 
 e.g. `brew install zurawiki/brews/gptcommit`
+e.g. `brew install zurawiki/brews/gptee`
 
 Or `brew tap zurawiki/brews` and then `brew install gptcommit`.
 
@@ -22,7 +23,7 @@ Or `brew tap zurawiki/brews` and then `brew install gptcommit`.
 
 2. Install the new bottle
 ```sh
-brew install --build-bottle Formula/gptcommit.rb
+brew install --build-bottle Formula/*.rb
 ```
 
 3. Update any checksums as neccesary. Make sure the checksums are verified manually.
