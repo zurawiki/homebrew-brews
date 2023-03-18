@@ -1,9 +1,9 @@
 class Gptee < Formula
-  version = "0.3.0"
+  version = "0.3.3"
   desc "Output from a language model using standard input as the prompt"
   homepage "https://github.com/zurawiki/gptee"
   url "https://github.com/zurawiki/gptee/archive/v" + version.to_s + ".tar.gz"
-  sha256 "94c1ed20c31eb24b85b94eacbfc8adfce96556e23f87e29182d47798a3cb3fcb"
+  sha256 "35a83e922cccf0b65f6db8f6fd6412aa7908b4b2360181a74a464c4104dda033"
   license "MIT"
   head "https://github.com/zurawiki/gptee.git", branch: "main"
 
