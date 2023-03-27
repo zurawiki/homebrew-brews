@@ -19,7 +19,8 @@ export BREW_DESC="$3"
 export REPO_URL="https://github.com/$REPO_NAME"
 export BREW_VERSION="$(
     curl -sL "https://api.github.com/repos/$REPO_NAME/releases/latest" \
-    | python3 -c 'import sys, json; print(json.load(sys.stdin)["tag_name"])'
+    | python3 -c 'import sys, json; print(json.load(sys.stdin)["tag_name"])' \
+    | sed 's/^v//'
 )"
 export BREW_HASH="$(curl -sL "$REPO_URL/archive/v$BREW_VERSION.tar.gz" | shasum -a 256 | cut -d ' ' -f 1)"
 export BREW_CLASS="$(tr '[:lower:]' '[:upper:]' <<< ${BIN_NAME:0:1})${BIN_NAME:1}"
