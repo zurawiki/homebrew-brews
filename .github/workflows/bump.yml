@@ -2,6 +2,7 @@ name: bump
 on:
   schedule:
     - cron: '30 * * * *'
+  workflow_dispatch:
 
 jobs:
   bump:
@@ -14,4 +15,4 @@ jobs:
         run: ./scripts/full_update.sh
 
       - name: Commit and push to repo
-        run: git commit -a -m "Bump release versions" && git push
+        run: git commit -a -m "Bump release versions" && git push || echo "nothing to commit"
