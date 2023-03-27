@@ -1,0 +1,16 @@
+name: bump
+on:
+  schedule:
+    - cron: '30 * * * *'
+
+jobs:
+  bump:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Bump versions
+        run: ./scripts/full_update.sh
+
+      - name: Commit and push to repo
+        run: git commit -a -m "Bump release versions" && git push
