@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      - uses: fregante/setup-git-user@v2
 
       - name: Bump versions
         run: ./scripts/full_update.sh
