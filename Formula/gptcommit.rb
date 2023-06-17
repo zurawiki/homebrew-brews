@@ -1,9 +1,9 @@
 class Gptcommit < Formula
-  version = "0.5.8"
+  version = "0.5.9"
   desc "Git prepare-commit-msg hook for authoring commit messages with GPT-3"
   homepage "https://github.com/zurawiki/gptcommit"
   url "https://github.com/zurawiki/gptcommit/archive/v" + version.to_s + ".tar.gz"
-  sha256 "771565fa4977508b23a78cfd09bb30b506b96a5ec2fedfdf5e39e8826e23d4d4"
+  sha256 "0d01c26662ed5d506925c05fcd3d5063dab6217f23b6b23ce9715e6ad37bea9c"
   license "MIT"
   head "https://github.com/zurawiki/gptcommit.git", branch: "main"
 
