@@ -1,7 +1,5 @@
 name: bump
 on:
-  schedule:
-    - cron: '54 */6 * * *'
   workflow_dispatch:
 
 jobs:
